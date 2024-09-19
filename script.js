@@ -23,7 +23,10 @@ function clock() {
         timer.innerHTML = `${mon}/${day}/${year}, ${h-12}:${m}:${s} PM`;  
     }
 
-    setTimeout(clock, 1000)
+    // setTimeout(clock, 1000)
 }
-clock();
+// clock();
 
+setInterval(() => {
+    clock()
+}, 1000);
