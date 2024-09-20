@@ -8,7 +8,7 @@ function clock() {
     let m = date.getMinutes();
     let s = date.getSeconds();
     let day = date.getDate();
-    let mon = date.getMonth();
+    let mon = date.getMonth() + 1;
     let year = date.getFullYear()
         
     // console.log(mon);
