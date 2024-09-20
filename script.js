@@ -2,14 +2,16 @@ let timer = document.getElementById("timer");
 
 function clock() {
     let date = new Date();
+    // console.log(date);
+    
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
-    let day = date.getDay()
+    let day = date.getDate();
     let mon = date.getMonth();
     let year = date.getFullYear()
-    // console.log(h, m, s);
-    // console.log(ampm);
+        
+    // console.log(mon);
     if (h==0) {
         timer.innerHTML = `${mon}/${day}/${year}, ${h+12}:${m}:${s} AM`;   
     }
